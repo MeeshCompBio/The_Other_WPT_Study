@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 java -Xmx90g -jar /project/csbio/Meesh/Software/GenomeAnalysisTK.jar \
 -T HaplotypeCaller \
 -R /project/chadm/Meesh/Data/References/Gmax.a2.v1/assembly/Gmax_275_v2.0.fa \
