@@ -1,3 +1,7 @@
+#Unpack the downloaded *.sra files
+parallel --jobs 8 <FQ_Dump.txt
+
+#Run Fastqc on the unpacked SRA files
 parallel --gnu -j 8 fastqc \
 {1} \
 ::: SRR1737979_1.fastq SRR1737980_1.fastq SRR1737981_1.fastq SRR1737982_1.fastq SRR1737983_1.fastq SRR1737984_1.fastq SRR1737985_1.fastq SRR1737986_1.fastq SRR1737987_1.fastq SRR1737988_1.fastq SRR1737989_1.fastq SRR1737990_1.fastq SRR1737991_1.fastq SRR1737992_1.fastq SRR1737993_1.fastq SRR1737994_1.fastq SRR1737995_1.fastq SRR1737996_1.fastq SRR1737997_1.fastq SRR1737998_1.fastq SRR1737999_1.fastq SRR1738000_1.fastq SRR1738001_1.fastq SRR1738002_1.fastq SRR1738003_1.fastq SRR1738004_1.fastq SRR1738005_1.fastq SRR1738006_1.fastq SRR1738007_1.fastq SRR1738008_1.fastq SRR1738009_1.fastq SRR1738010_1.fastq SRR1738011_1.fastq SRR1738012_1.fastq SRR1738013_1.fastq SRR1738014_1.fastq
