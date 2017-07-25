@@ -7,9 +7,11 @@ https://software.broadinstitute.org/gatk/documentation/article.php?id=3891
 ```
 
 ## Versions of software used
+```
 GNU parallel
 FastQC
 Cutadapt
 STAR
 Picard Tools
 GATK Suite
+```
