@@ -14,4 +14,6 @@ Cutadapt
 STAR
 Picard Tools
 GATK Suite
+VCFtools
+BEDtools
 ```
