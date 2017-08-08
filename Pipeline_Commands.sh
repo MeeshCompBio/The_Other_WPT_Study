@@ -1,5 +1,5 @@
 #Unpack the downloaded *.sra files
-parallel --jobs 8 <FQ_Dump.txt
+parallel --jobs 8 < FQ_Dump.txt
 
 #Run Fastqc on the unpacked SRA files
 parallel --gnu -j 8 fastqc \
