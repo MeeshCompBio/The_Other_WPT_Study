@@ -18,7 +18,6 @@ for line in seqfile:
     if line.startswith("#"):
         continue
     else:
-        #print(line)
         columns = line.split("\t")
         QUAL = columns[5]
         Genotype = columns[9][0:3]
