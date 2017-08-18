@@ -1,4 +1,4 @@
-"""writes the dept, QUAL score, genotype and SNP or INDEL from a single sample vcf to std out"""
+"""writes the Depth, QUAL score, genotype and SNP or INDEL from a single sample vcf to std out"""
  
  
 #example use
