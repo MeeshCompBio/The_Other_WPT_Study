@@ -1,9 +1,8 @@
-"""s takes a GATK.vcf file as input, the numer of samples, and the name of your desired
- ouput file and returns you a .csv file with the allelic state for each sample"""
+""writes the dept, QUAL score, genotype and SNP or INDEL from a single sample vcf to std out"""
  
  
 #example use
-#python3 your.vcf 
+#python3 Getinfo.py your.vcf 
 
 
 import sys
@@ -36,36 +35,3 @@ for line in seqfile:
     final = itertools.chain([Depth],[QUAL],[Genotype],[State])
     sys.stdout.write(('\t'.join(final)+'\n'))
 
-
-
-
-
-
-# var = [[] for _ in range(len(header))]
-# # parse our the file
-# for line in sequenceinfolist:
-#     columns = line.split("\t")
-#     for i in range(len(header)):
-#         if i < 9:
-#             var[i].append(columns[i])
-#         else:
-#           #this line slices out the allele state
-#             var[i].append(columns[i][0:3])
-
-# output = open(sys.argv[3], "w")
-
-# output.write('\t'.join(header))
-# output.write('\n')
-
-# PLIST= list()
-
-# for j in range(len(var[1])):
-#     final = []
-#     for i in var:
-#         final.append(i[j])
-#     #make output comma seperated
-#     output.write('\t'.join(final)+'\n')
-
-
-
-# output.close()
