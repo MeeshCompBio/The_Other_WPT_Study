@@ -188,6 +188,6 @@ write.table(Line_Overlap, "Line_Overlap_50kintersect_Filter_Pipeline.tsv", quote
 Geno_Overlap <- DATA[DATA$POS %in% AllSNPPOS$POS, ]
 Geno_Overlap_p1 <- Geno_Overlap[,1:10066]
 Geno_Overlap_p2 <- Geno_Overlap[,10067:20132]
-#Write to a file
+#Write to a file to calculate similairity of lines to SRR lines
 write.table(Geno_Overlap_p1, "50kintersect_withHG_V3_Part1_Filter.tsv", quote = FALSE, sep = "\t", row.names = FALSE)
 write.table(Geno_Overlap_p2, "50kintersect_withHG_V3_Part2_Filter.tsv", quote = FALSE, sep = "\t", row.names = FALSE)

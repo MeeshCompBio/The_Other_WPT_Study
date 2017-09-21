@@ -1,4 +1,6 @@
 #Run STAR with two pass mode on previous index ref genome
+#Users will need to chanfe the gff and reference location for each command
+#Each command uses 8 threads
 STAR \
 --runThreadN 8 \
 --genomeDir /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/assembly/STAR \

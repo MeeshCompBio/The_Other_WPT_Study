@@ -35,6 +35,7 @@ java -Xmx2g -jar /panfs/roc/groups/13/stuparr/mich0391/Software/picard/build/lib
 java -Xmx2g -jar /panfs/roc/groups/13/stuparr/mich0391/Software/picard/build/libs/picard.jar AddOrReplaceReadGroups I=SRR1738012Aligned.out.sam O=SRR1738012_rg_added_sorted.bam SO=coordinate RGID=SRR1738012 RGLB=SRR1738012 RGPL=Illumina1.9 RGPU=MSI RGSM=SRR1738012 
 java -Xmx2g -jar /panfs/roc/groups/13/stuparr/mich0391/Software/picard/build/libs/picard.jar AddOrReplaceReadGroups I=SRR1738013Aligned.out.sam O=SRR1738013_rg_added_sorted.bam SO=coordinate RGID=SRR1738013 RGLB=SRR1738013 RGPL=Illumina1.9 RGPU=MSI RGSM=SRR1738013 
 java -Xmx2g -jar /panfs/roc/groups/13/stuparr/mich0391/Software/picard/build/libs/picard.jar AddOrReplaceReadGroups I=SRR1738014Aligned.out.sam O=SRR1738014_rg_added_sorted.bam SO=coordinate RGID=SRR1738014 RGLB=SRR1738014 RGPL=Illumina1.9 RGPU=MSI RGSM=SRR1738014 
+
 #Mark Duplicates
 java -jar -Xmx2g /panfs/roc/groups/13/stuparr/mich0391/Software/picard/build/libs/picard.jar MarkDuplicates I=SRR1737979_rg_added_sorted.bam O=SRR1737979_rg_added_sorted_dedupped.bam  CREATE_INDEX=true VALIDATION_STRINGENCY=SILENT M=output.metrics
 java -jar -Xmx2g /panfs/roc/groups/13/stuparr/mich0391/Software/picard/build/libs/picard.jar MarkDuplicates I=SRR1737980_rg_added_sorted.bam O=SRR1737980_rg_added_sorted_dedupped.bam  CREATE_INDEX=true VALIDATION_STRINGENCY=SILENT M=output.metrics
@@ -72,6 +73,7 @@ java -jar -Xmx2g /panfs/roc/groups/13/stuparr/mich0391/Software/picard/build/lib
 java -jar -Xmx2g /panfs/roc/groups/13/stuparr/mich0391/Software/picard/build/libs/picard.jar MarkDuplicates I=SRR1738012_rg_added_sorted.bam O=SRR1738012_rg_added_sorted_dedupped.bam  CREATE_INDEX=true VALIDATION_STRINGENCY=SILENT M=output.metrics
 java -jar -Xmx2g /panfs/roc/groups/13/stuparr/mich0391/Software/picard/build/libs/picard.jar MarkDuplicates I=SRR1738013_rg_added_sorted.bam O=SRR1738013_rg_added_sorted_dedupped.bam  CREATE_INDEX=true VALIDATION_STRINGENCY=SILENT M=output.metrics
 java -jar -Xmx2g /panfs/roc/groups/13/stuparr/mich0391/Software/picard/build/libs/picard.jar MarkDuplicates I=SRR1738014_rg_added_sorted.bam O=SRR1738014_rg_added_sorted_dedupped.bam  CREATE_INDEX=true VALIDATION_STRINGENCY=SILENT M=output.metrics
+
 #SplitNCigarReads
 java -Xmx2g -jar /panfs/roc/groups/13/stuparr/mich0391/Software/GenomeAnalysisTK.jar -T SplitNCigarReads -R /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/assembly/Gmax_275_v2.0.fa -I SRR1737979_rg_added_sorted_dedupped.bam -o SRR1737979_rg_added_sorted_dedupped_split.bam -rf ReassignOneMappingQuality -RMQF 255 -RMQT 60 -U ALLOW_N_CIGAR_READS
 java -Xmx2g -jar /panfs/roc/groups/13/stuparr/mich0391/Software/GenomeAnalysisTK.jar -T SplitNCigarReads -R /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/assembly/Gmax_275_v2.0.fa -I SRR1737980_rg_added_sorted_dedupped.bam -o SRR1737980_rg_added_sorted_dedupped_split.bam -rf ReassignOneMappingQuality -RMQF 255 -RMQT 60 -U ALLOW_N_CIGAR_READS

@@ -1,16 +1,15 @@
 # The_Other_WPT_Study
 
 ## Pipeline
-SNPs and indels were called according to the GATK best practices pipeline for RNA-seq
-```
-https://software.broadinstitute.org/gatk/documentation/article.php?id=3891
-```
+SNPs and indels were called according to the [GATK best practices](https://software.broadinstitute.org/gatk/documentation/article.php?id=3891) pipeline for RNA-seq
+
+
 If you have the all of the .sra files and software version downloaded, you can run the command below to generate SNPs and indels. 
 <br>
 <br>
 <strong>Note:</strong> 
 <br>
-The scripts that are calleds use multple threads, please make sure to check that your machine has enough threads, or modify the scripts accordingly. 
+The scripts that are called use multple threads, please make sure to check that your machine has enough threads, or modify the scripts accordingly.
 
 ```
 #Make sure you are in the same directory as your downloaded SRA files from PRJNA271477 on the NCBI SRA
@@ -18,6 +17,7 @@ bash Pipeline_Commands.sh
 ```
 ## Versions of software used
 ```
+lftp 4.38.1
 GNU parallel 20160822
 FastQC 0.11.5
 Cutadapt 1.8.1
