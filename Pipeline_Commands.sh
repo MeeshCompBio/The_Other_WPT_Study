@@ -21,10 +21,10 @@ parallel --gnu -j 8 fastqc \
 mkdir -p STAR
 cd STAR
 
-#Remove adaptor contamination and trim reads based on quality
+#Align reads using STAR
 parallel --j 8 < STAR_Commands.txt
 
-#Add read group information, mark duplicated and SplitNCigar reads according to GATK gold standard pipeline for RNA-seq
+#Add read group information, mark duplicates and SplitNCigar reads according to GATK gold standard pipeline for RNA-seq
 parallel --j 8 < Picard_Bam_Process.txt
 
 #Call variants and indels using haplotype caller then split SNP/INDEL and run hard filters
