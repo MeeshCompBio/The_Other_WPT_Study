@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#USER WILL NEED TO CHANGE PATH TO THIER GATK SOFTWARE
+#USER WILL NEED TO CHANGE PATH TO THEIR GATK SOFTWARE path
 #-R will need to be changed for users reference genome location
 
 
