@@ -4,7 +4,7 @@
 SNPs and indels were called according to the [GATK best practices](https://software.broadinstitute.org/gatk/documentation/article.php?id=3891) pipeline for RNA-seq
 
 
-If you have the all of the .sra files and software version downloaded, you can run the command below to generate SNPs and indels. 
+If you have the all of the software version downloaded, you can run the command below to generate SNPs and indels. 
 <br>
 <br>
 <strong>Note:</strong> 
