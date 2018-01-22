@@ -22,6 +22,7 @@ mkdir -p STAR
 cd STAR
 
 #Align reads using STAR
+# You will need to first index the geome using STAR and modify script below to point at GFF and .fa file
 parallel --j 8 < STAR_Commands.txt
 
 #Add read group information, mark duplicates and SplitNCigar reads according to GATK gold standard pipeline for RNA-seq
