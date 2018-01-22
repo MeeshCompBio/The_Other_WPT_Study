@@ -10,7 +10,7 @@ If you have the all of the software version downloaded, you can run the command 
 <strong>Note:</strong> 
 <br>
 * The scripts that are called use multple threads, please make sure to check that your machine has enough threads, or modify the scripts accordingly.
-* You will also need to download/index the soy a2.v1 genome and modify STAR_Commands.txt to point to your .fa and .gff file locations (See STAR_index.sh for an example)
+* You will also need to download/index the soy a2.v1 genome and modify STAR_Commands.txt to point to your .fa and .gff file locations (see STAR_index.sh for an example)
 
 ```bash
 bash Pipeline_Commands.sh
