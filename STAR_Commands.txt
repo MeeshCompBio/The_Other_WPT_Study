@@ -51,9 +51,9 @@ STAR \
 --genomeDir /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/assembly/STAR \
 --sjdbGTFfile /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/annotation/Gmax_275_Wm82.a2.v1.gene_exons.gff3 \
 --sjdbGTFtagExonParentTranscript Parent \
---readFilesIn ../SRR1737988_cutadapt.fastq \
+--readFilesIn ../SRR1737984_cutadapt.fastq \
 --twopassMode Basic \
---outFileNamePrefix SRR1737988
+--outFileNamePrefix SRR1737984
 
 STAR \
 --runThreadN 8 \
@@ -141,9 +141,9 @@ STAR \
 --genomeDir /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/assembly/STAR \
 --sjdbGTFfile /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/annotation/Gmax_275_Wm82.a2.v1.gene_exons.gff3 \
 --sjdbGTFtagExonParentTranscript Parent \
---readFilesIn ../SRR1737998_cutadapt.fastq \
+--readFilesIn ../SRR1737994_cutadapt.fastq \
 --twopassMode Basic \
---outFileNamePrefix SRR1737998
+--outFileNamePrefix SRR1737994
 
 STAR \
 --runThreadN 8 \
@@ -231,9 +231,9 @@ STAR \
 --genomeDir /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/assembly/STAR \
 --sjdbGTFfile /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/annotation/Gmax_275_Wm82.a2.v1.gene_exons.gff3 \
 --sjdbGTFtagExonParentTranscript Parent \
---readFilesIn ../SRR1738008_cutadapt.fastq \
+--readFilesIn ../SRR1738004_cutadapt.fastq \
 --twopassMode Basic \
---outFileNamePrefix SRR1738008
+--outFileNamePrefix SRR1738004
 
 STAR \
 --runThreadN 8 \
@@ -318,8 +318,9 @@ STAR \
 
 STAR \
 --runThreadN 8 \
---genomeDir /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/assembly/STAsjdbGTFtagExonParentTranscript Parent\
---sjdbGTFfile /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/annotation/Gmax_275_Wm82.a2.v1.gene_exons.gsjdbGTFtagExonParentTranscript Parent \
---readFilesIn ../SRR1738018_cutadapt.fastq \
+--genomeDir /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/assembly/STAR \
+--sjdbGTFfile /panfs/roc/groups/13/stuparr/shared/References/Gmax.a2.v1/annotation/Gmax_275_Wm82.a2.v1.gene_exons.gff3 \
+--sjdbGTFtagExonParentTranscript Parent \
+--readFilesIn ../SRR1738014_cutadapt.fastq \
 --twopassMode Basic \
---outFileNamePrefix SRR1738018
+--outFileNamePrefix SRR1738014
