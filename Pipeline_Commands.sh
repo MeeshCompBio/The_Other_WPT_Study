@@ -23,10 +23,10 @@ cd STAR
 
 #Align reads using STAR
 # You will need to first index the geome using STAR and modify script below to point at GFF and .fa file
-parallel --j 8 < STAR_Commands.txt
+bash ../STAR_Commands.sh
 
 #Add read group information, mark duplicates and SplitNCigar reads according to GATK gold standard pipeline for RNA-seq
-parallel --j 8 < Picard_Bam_Process.txt
+parallel --j 8 < ../Picard_Bam_Process.txt
 
 #Call variants and indels using haplotype caller then split SNP/INDEL and run hard filters
-bash Haplotype_Caller.sh
+bash ../Haplotype_Caller.sh
