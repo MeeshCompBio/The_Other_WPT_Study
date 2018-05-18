@@ -4,17 +4,16 @@
 SNPs and indels were called according to the [GATK best practices](https://software.broadinstitute.org/gatk/documentation/article.php?id=3891) pipeline for RNA-seq
 
 
-If you have the all of the software version downloaded, you can run the command below to download the data and generate SNPs and indels. 
-<br>
-<br>
+If you have the all of the software (with correct versions) downloaded, you can run the command below to download the data and generate SNPs and indels. 
+```bash
+bash Pipeline_Commands.sh
+```
 <strong>Note:</strong> 
 <br>
 * The scripts that are called use multple threads, please make sure to check that your machine has enough threads, or modify the scripts accordingly.
 * You will also need to download/index the soy a2.v1 genome and modify STAR_Commands.txt to point to your .fa and .gff file locations (see STAR_index.sh for an example)
 
-```bash
-bash Pipeline_Commands.sh
-```
+
 
 ## Versions of software used
 ```
